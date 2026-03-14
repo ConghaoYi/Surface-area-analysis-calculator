@@ -5,8 +5,11 @@
 * NumPy
 ## Usage
 Step 1: Change the "image_dir" variable in main.py to the dirctory of the waste photos and run the script
+
 Step 2: Drag and select the area of **all the waste**. After finishing selecting the area, press "Enter" to continue
+
 Step 3: Drag and select the waste area that is **contaminated**. Multiple regions of interests (ROIs) can be selected in this step. **DO NOT** overlap the ROIs or else it would askew the data. After finishing selecting the ROIs, press "Enter" to continue.
+
 Step 4: The script will move on to the next image until every image is processed. 
 ## Output
 * A csv file will be outputed. It records the image name and the corresponding contamination rate in that image.
