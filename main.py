@@ -10,7 +10,10 @@ def main(
         c1_name = 'Site', 
         c2_name = 'Contamination_rate%'
 ):
-    surface_area_funcs.data_init(dir_name = output_dir,dataset_name = dataset_name,c1_name= c1_name, c2_name=  c2_name)
+    surface_area_funcs.data_init(dir_name = output_dir,
+                                 dataset_name = dataset_name,
+                                 c1_name= c1_name, 
+                                 c2_name=c2_name)
     os.makedirs(os.path.join(output_dir,'processed_photos'),exist_ok=True)
     image_list = os.listdir(image_dir)
     for file in image_list:
@@ -23,6 +26,6 @@ def main(
         df.loc[len(df)-1, c1_name] = file
         df.to_csv(os.path.join(output_dir,dataset_name), index=False)
 main(
-    image_dir=,
+    image_dir=
     
 )
